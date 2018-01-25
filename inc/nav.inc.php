@@ -20,6 +20,7 @@
 								<li><a href="index.php">Le restaurant</a></li>
 								<li><a href="le_chef.php">Le chef</a></li>
 								<li><a href="La_carte.php">La carte</a></li>
+								<li><a href="reservation_page.php">Reservation</a></li>
 								<li><a href="contact.php">Contact</a></li>
 						  </ul>
 						</div>
