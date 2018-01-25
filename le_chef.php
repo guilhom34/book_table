@@ -5,8 +5,8 @@ include('inc/nav.inc.php');
 		<section class="container">
 			
 			                
-            <div class="row">
-				  <div class="col-xs-6 col-md-3">
+            
+				  <div id="chef" class="col-xs-10 col-md-10 col-lg-4">
 				    <a href="#" class="thumbnail">
 				      <img src="images/cave1.jpg" alt="image_du_chef">
 				    </a>
@@ -14,11 +14,31 @@ include('inc/nav.inc.php');
 				  
 			</div>
             
-            <div class="jumbotron container col-xs-10 col-lg-6">
-              	<h2>Parcours</h2>
+            <div class="jumbotron col-xs-10 col-lg-8">
+              	<h2>Présentation et Parcours</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <button type="submit" name="Soumettre">
+                 <p><a class="btn btn-default" href="news.php" role="button">Voir plus &raquo;</a></p>
             </div>
+
+            <div class="platePicture">
+				  <div class="col-xs-6 col-md-3 col-lg-4">
+					    <a href="#" class="thumbnail">
+					      <img src="images/plat_gastronomique.jpg" alt="Boeuf et sa julienne de legumes">
+					    </a>
+				  </div>
+				  <div class="col-xs-6 col-md-3 col-lg-4">
+					    <a href="#" class="thumbnail">
+					      <img src="images/plat4.jpg" alt="Boeuf" class="img-rounded">
+					    </a>
+				  </div>
+				  <div class="col-xs-6 col-md-3 col-lg-4">
+					    <a href="#" class="thumbnail">
+					      <img src="images/dessert8.jpg" alt="dessert">
+					    </a>
+				  </div>
+				  
+			 </div>
+            
             
         
         
