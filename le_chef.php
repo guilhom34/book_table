@@ -2,11 +2,26 @@
 include('inc/header.inc.php');
 include('inc/nav.inc.php');
 ?>
-		<section>
-			<div class="conteneur">
-				<h1>Parcours</h1>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in venenatis nisi. Aenean vitae tincidunt augue. Proin ante urna, cursus eget ante id, ullamcorper placerat nisi. Quisque in sapien ac turpis accumsan imperdiet. Fusce laoreet pharetra felis, ac efficitur nisi molestie porttitor. Pellentesque vitae justo neque. Donec congue nulla arcu, eu sodales lorem ullamcorper suscipit. Integer gravida suscipit neque quis fringilla. Etiam facilisis justo vitae lacus viverra posuere eget quis ante. Nulla accumsan urna bibendum vestibulum pretium. Donec aliquet velit a nisl eleifend faucibus.
+		<section class="container">
+			
+			                
+            <div class="row">
+				  <div class="col-xs-6 col-md-3">
+				    <a href="#" class="thumbnail">
+				      <img src="images/cave1.jpg" alt="image_du_chef">
+				    </a>
+				  </div>
+				  
 			</div>
+            
+            <div class="jumbotron container col-xs-10 col-lg-6">
+              	<h2>Parcours</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <button type="submit" name="Soumettre">
+            </div>
+            
+        
+        
 		</section>
 		
 <?php

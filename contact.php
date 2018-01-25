@@ -7,37 +7,37 @@ include('inc/nav.inc.php');
 			<div class="conteneur">
 				<h1>Nous contacter</h1>
 				<?php
-$message = ''; // on prépare une variable vide afin de ne pas avoir d'erreur lors de l'appel de cette variable dans l'html au niveau du fieldset
-if(isset($_POST['pseudo']) && isset($_POST['email']))
-{
-	$pseudo = trim($_POST['pseudo']);
-	$email = trim($_POST['email']);
-	
-	if(empty($pseudo) || !filter_var($email, FILTER_VALIDATE_EMAIL))
-	{
-		// si l'on rentre dans cette condition, alors soit le pseudo est vide, soit l'email n'a pas un format valide.
-		
-		$message = '<p style="padding: 10px; color: white; background-color: red; text-align: center;">
-			Attention, le pseudo est obligatoire et le mail doit avoir un format valide<br>
-			Veuillez recommencer.
-		</p>';			
-	}
-	else { // si on rentre dans le else alors le pseudo n'est pas vide et le mail a un format correct.
-	
-		// dans ce cas nous allons enregistrer ces informations sur un fichier généré par php
-		
-		// fopen()
-		$fichier = fopen("liste.txt", "a");
-		// fopen en mode "a" permet de créer un fichier ou de l'ouvrir s'il existe déjà.
-		
-		// on écrit les informations dans le fichier:
-		fwrite($fichier, $pseudo . ' - ' . $email . "\n");
-		// \n permet le retour à la ligne dans un fichier en revanche il doit obligatoirement être écrit entre "" pour être reconnu
-		
-		$fichier = fclose($fichier); // fclose permet de fermer le fichier et de libérer de l'espace mémoire.
-		
-	}
-}
+					$message = ''; // on prépare une variable vide afin de ne pas avoir d'erreur lors de l'appel de cette variable dans l'html au niveau du fieldset
+					if(isset($_POST['pseudo']) && isset($_POST['email']))
+					{
+						$pseudo = trim($_POST['pseudo']);
+						$email = trim($_POST['email']);
+						
+						if(empty($pseudo) || !filter_var($email, FILTER_VALIDATE_EMAIL))
+						{
+							// si l'on rentre dans cette condition, alors soit le pseudo est vide, soit l'email n'a pas un format valide.
+							
+							$message = '<p style="padding: 10px; color: white; background-color: red; text-align: center;">
+								Attention, le pseudo est obligatoire et le mail doit avoir un format valide<br>
+								Veuillez recommencer.
+							</p>';			
+						}
+						else { // si on rentre dans le else alors le pseudo n'est pas vide et le mail a un format correct.
+						
+							// dans ce cas nous allons enregistrer ces informations sur un fichier généré par php
+							
+							// fopen()
+							$fichier = fopen("liste.txt", "a");
+							// fopen en mode "a" permet de créer un fichier ou de l'ouvrir s'il existe déjà.
+							
+							// on écrit les informations dans le fichier:
+							fwrite($fichier, $pseudo . ' - ' . $email . "\n");
+							// \n permet le retour à la ligne dans un fichier en revanche il doit obligatoirement être écrit entre "" pour être reconnu
+							
+							$fichier = fclose($fichier); // fclose permet de fermer le fichier et de libérer de l'espace mémoire.
+							
+						}
+					}
 ?>
 	<body>
 	<?php echo $message; ?>
@@ -149,8 +149,7 @@ function getLocation() {
 }
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    var img_url = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCJxgKHBjNrsKSeKbTJ8W5fSo_AQO_P9s4&region=FR">
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 //To use this code on your website, get a free API key from Google.

@@ -8,10 +8,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/index.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+	
 
 		<style>
 			form { font-family: sans-serif; }
@@ -22,7 +19,7 @@
 			.validation:hover { background-color: #c0c0c0; }
 		</style>
 	</head>
-	
+		
 	<body>
 		<header></header>
 		
