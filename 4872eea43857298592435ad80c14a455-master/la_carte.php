@@ -8,7 +8,7 @@ include('inc/nav.inc.php');
 		<section>
 			<div class="container">
 
-<button type="button" class="btn" data-toggle="modal" data-target="#23" data-whatever="23">Menu 23€</button>
+<button type="button" class="btn" data-toggle="modal" data-target="#menu_delice" data-whatever="23">Menu délice 23€</button>
 <button type="button" class="btn" data-toggle="modal" data-target="#32" data-whatever="32">Menu 32€</button>
 <button type="button" class="btn" data-toggle="modal" data-target="#45" data-whatever="45">Menu 45€</button>
 
@@ -16,20 +16,19 @@ include('inc/nav.inc.php');
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Menu 23€</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLabel">Menu délice 23€</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="glyphicon glyphicon-home mon_icone">
         </button>
       </div>
       <div class="modal-body">
         <form>
-            <label for="message-text" class="col-form-label">Le gourmet</label>
+            <label for="message-text" class="col-form-label">Le Délice</label>
             <img src="images/menu_gourmet.jpg" id="menu_gourmet">
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn" data-dismiss="modal">Close</button>
-        <button type="button" class="btn">Send message</button>
       </div>
     </div>
   </div>
