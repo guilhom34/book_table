@@ -61,3 +61,4 @@ function slideSwitch() {
 $(function() {
     setInterval( "slideSwitch()", 5000 );
 });
+          
