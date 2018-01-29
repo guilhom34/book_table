@@ -34,5 +34,12 @@ include('inc/nav.inc.php');
 				</button>
 			</div>
 		</form>
+		<div>
+			
+  					<img class="card-img" src="images/tables_reservation.png" alt="Card image">
+  					<div class="card-img-overlay">
+  					</div>
+
+		</div>
 
 	</div>

@@ -21,7 +21,12 @@
 	</head>
 		
 	<body>
-		<header></header>
-		
+		<header>
+
+		</header>
+
+  					<img class="card-img" src="images/logo_la_table_gourmande.png" alt="Card image">
+  					<div class="card-img-overlay">
+  					</div>
 	
 		
