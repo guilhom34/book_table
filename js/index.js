@@ -107,10 +107,10 @@ $(function() {
     $.datepicker.setDefaults($.datepicker.regional['fr']);
 
     // ----Select Menu---
-       $(function(){ $( "#number" )
+       $(function(){ $( "#number, #time" )
             .selectmenu()
             .selectmenu( "menuWidget" )
-            .addClass( "overflow" )};
+            .addClass( "overflow" )});
 
 
 
