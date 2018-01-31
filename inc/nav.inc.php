@@ -1,4 +1,7 @@
-		
+<?php
+include ('connexion.php');
+
+?>		
 		    <div class="navbar-wrapper container">
 
 		       <nav class="navbar navbar-inverse navbar-static-top">
@@ -10,22 +13,26 @@
 					                <span class="icon-bar"></span>
 					                <span class="icon-bar"></span>
 				              	</button>
-				            </nav>
+				      		</nav>
 				
 
 						             
 			</div>
-						<div id="navbar" class="navbar-collapse collapse">
-			              <ul class="nav navbar-nav">
-								<li><a href="index.php">Le restaurant</a></li>
-								<li><a href="le_chef.php">Le chef</a></li>
-								<li><a href="La_carte.php">La carte</a></li>
-								<li><a href="reservation_page.php">Reservation</a></li>
-								<li><a href="contact.php">Contact</a></li>
-						  </ul>
-						</div>
-					</div>
-				</div>
+			<div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+					<li><a href="index.php">Le restaurant</a></li>
+					<li><a href="le_chef.php">Le chef</a></li>
+					<li><a href="La_carte.php">La carte</a></li>
+					<li><a href="reservation_page.php">Reservation</a></li>
+					<li><a href="contact.php">Contact</a></li>
+			  </ul>
 			</div>
+						
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="<a href='#connexion'></a>">
+				
+			</button>
+
+				</nav>			  		
+			</div>
+	
 							
-				</nav>

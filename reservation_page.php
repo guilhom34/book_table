@@ -22,10 +22,10 @@ include('inc/nav.inc.php');
 			</div>
 			 
 			
-				<button type="submit" class="btn btn-default g-recaptcha"
+			<!-- 	<button type="submit" class="btn btn-default g-recaptcha"
 						data-sitekey="6LewlTkUAAAAAHohIMjGmJ4BKJhzXIHy6qY5rj4i"
 						data-callback="YourOnSubmitFn">Réserver
-				</button>
+				</button> -->
 			
 		</form>
 	

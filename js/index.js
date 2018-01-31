@@ -1,7 +1,6 @@
 // Déclaration de la variable globale définissant l'état courant
 var g_bMenuFerme;
 
-console.log("ok");
 
 
 $(document).ready( function() {
@@ -112,6 +111,10 @@ $(function() {
             .selectmenu( "menuWidget" )
             .addClass( "overflow" )});
 
+   
+
+
+    
 
 
 
