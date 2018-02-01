@@ -1,7 +1,6 @@
 // Déclaration de la variable globale définissant l'état courant
 var g_bMenuFerme;
 
-console.log("ok");
 
 
 $(document).ready( function() {
@@ -107,11 +106,15 @@ $(function() {
     $.datepicker.setDefaults($.datepicker.regional['fr']);
 
     // ----Select Menu---
-       $(function(){ $( "#number" )
+       $(function(){ $( "#number, #time" )
             .selectmenu()
             .selectmenu( "menuWidget" )
-            .addClass( "overflow" )};
+            .addClass( "overflow" )});
 
+   
+
+
+    
 
 
 
