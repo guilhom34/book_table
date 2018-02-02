@@ -28,23 +28,17 @@ include('inc/nav.inc.php');
 				</button> -->
 			
 		</form>
-<<<<<<< HEAD
 
 		<div>
 			
-  					<img class="card-img" src="../images/tables_reservation.png" alt="Card image">
+  					<img class="card-img" src="images/tables_reservation.png" alt="Card image">
   					<div class="card-img-overlay">
   					</div>
 
 		</div>
 
-<<<<<<< HEAD
-		
-=======
+
 	</div>
-=======
-	
->>>>>>> 8c0ee45d7f1172ac350ee874e6c0a1e5b7da59cb
 
 			<div class="col-11 col-sm-10 col-lg-4">
 			
@@ -109,6 +103,5 @@ include('inc/nav.inc.php');
         
 
 
->>>>>>> 7cfd85ed39cdc006c33f9698d3b12a8fc58baa2c
 
 	
