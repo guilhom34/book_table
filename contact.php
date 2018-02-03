@@ -4,7 +4,7 @@ include('inc/nav.inc.php');
 ?>
 
 		<section>
-			<div class="conteneur">
+			<div class="container">
 				<h1>Nous contacter</h1>
 				<?php
 					$message = ''; // on prépare une variable vide afin de ne pas avoir d'erreur lors de l'appel de cette variable dans l'html au niveau du fieldset

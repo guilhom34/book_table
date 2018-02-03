@@ -22,6 +22,10 @@
       			
       			<input type="submit" class="validation" name="valider" id="valider" value="Valider" />
       		</form>
+
+        <div>
+          <a class="text-muted" href="inscription.php">Vous n'avez pas de compte inscrivez-vous</a>
+        </div>
         </div>
       </div>
     </div>

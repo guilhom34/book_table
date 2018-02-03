@@ -8,6 +8,36 @@ body {
   color: #5a5a5a;
 }
 
+form { 
+  font-family: sans-serif; 
+}
+
+ 
+input, textarea { 
+    width: 100%; 
+    min-height: 30px; 
+    box-sizing: 
+    border-box; 
+    padding: 0 10px; 
+    border-radius: 3px; 
+    border: 1px 
+    solid #c0c0c0; 
+    resize: none; 
+  }
+
+    textarea { 
+      min-height: 100px; 
+    }
+      .validation { 
+        background-color: #333; 
+        color: white; 
+        border-radius: 0; 
+        cursor: pointer; 
+      }
+
+      .validation:hover { 
+        background-color: #c0c0c0; 
+      }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
