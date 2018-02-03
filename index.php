@@ -60,7 +60,6 @@ include('inc/nav.inc.php');
         
         
 
-      <script src="js/bootstrap.min.js"></script>
 
       <?php
           include('inc/footer.inc.php');

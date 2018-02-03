@@ -111,6 +111,13 @@ $(function() {
             .selectmenu( "menuWidget" )
             .addClass( "overflow" )});
 
+
+    // -----Modal-----
+
+    $('#connexion').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+})
+
    
 
 
