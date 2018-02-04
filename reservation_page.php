@@ -29,20 +29,47 @@ include('inc/nav.inc.php');
 			
 		</form>
 
-		<div>
-			
-  					<img class="card-img" src="images/tables_reservation.png" alt="Card image">
-  					<div class="card-img-overlay">
-  					</div>
+		<!--plan de reservation du aside avec les tables-->
 
-		</div>
+  					<img class="card-img" src="images/plan_restaurant.png" alt="Card image" style="float: left;">
+					<img class="card-img" src="images/coupole.png" alt="card image" style="position: absolute; margin-top: 200px; margin-left: 30px;">
+
+				<div class="deux-personnes" style="position: absolute; margin-left: 790px; margin-top: 360px;">
+					<img class="pull-right" src="images/table_1.png" alt="table 1">
+					<img class="pull-right" src="images/table_2.png" alt="table 2">
+					<img class="pull-right" src="images/table_5.png" alt="table 5">
+					<img class="pull-right" src="images/table_7.png" alt="table 7">
+					<img class="pull-right" src="images/table_9.png" alt="table 9">
+  				</div>
+					
+
+				<div class="six-personnes" style="position: absolute; margin-left: 957px; margin-top: 430px;">
+
+					<img class="pull-right" src="images/table_6.png" alt="table 6">
+					<img class="pull-right" src="images/table_4.png" alt="table 4">
+				</div>
 
 
-	</div>
+				<div class="quatre-personnes" style="position: absolute; margin-left: 764px; margin-top: 610px;">
+
+					<img class="pull-right" src="images/table_8.png" alt="table 8">
+					<img class="pull-right" src="images/table_10.png" alt="table 10">
+					<img class="pull-right" src="images/table_3.png" alt="table 3">
+					<img class="pull-right" src="images/table_11.png" alt="table 11">
+					<img class="pull-right" src="images/table_12.png" alt="table 12">
+
+					<div class="barre" style="position: absolute; margin-left: 320px; margin-top: -250px;">
+
+					<img class="pull-right" src="images/barre.png" alt="barre">
+				</div>
+
+				
 
 			<div class="col-11 col-sm-10 col-lg-4">
-			
-				<label class="glyphicon glyphicon-calendar" for="Date">Date</label>
+
+			<div class="calendrier" style="position: absolute; margin-left: 100px; margin-top: 10px;">
+
+				<label class="glyphicon glyphicon-calendar" for="Date" style="position: absolute; margin-left: 800px; margin-top: 30px;">Date</label>
 				<input type="text" name="Date" id="datepicker">
 			
 				
@@ -50,7 +77,7 @@ include('inc/nav.inc.php');
 				<label>Heure</label>
 			
 				<select id="time" name="time">
-					<option value=""></option>
+					<option value="heure"></option>
 					
 					<option value="11:30:00">11:30</option>
 					<option value="12:00:00">12:00</option>
@@ -89,6 +116,7 @@ include('inc/nav.inc.php');
             	</select>
 
 			</div>
+		</div>
 	</div>			
 		<div class="container">
 			<section class="col-sm-10 col-lg-12 ">

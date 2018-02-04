@@ -25,11 +25,10 @@
 		
 	<body>
 		<header>
-
-		</header>
-
-  					<img class="card-img" src="images/logo_la_table_gourmande.png" alt="Card image">
-  					<div class="card-img-overlay">
-  					</div>
+<div>
+  					<img class="img-card" src="images/logo_la_table_gourmande.png" alt="Card image">
+  				</div>
 	
+		</header>
+				
 		

@@ -137,4 +137,21 @@ ul.share-buttons .sr-only{
   width: 1px;
   overflow: hidden;
 }
+.pull-right{
+  text-align: right;
+  display: block;
+}
+
+div.deux-personnes{
+  float: right;
+  margin-bottom: 20px;
+}
+div.quatre-personnes{
+  float: right;
+  margin-bottom: 20px;
+}
+div.six-personnes{
+  float: right;
+}
+
 }
