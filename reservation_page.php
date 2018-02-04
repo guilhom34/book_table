@@ -121,7 +121,7 @@ include('inc/nav.inc.php');
 		<div class="container">
 			<section class="col-sm-10 col-lg-12 ">
 				<div id="showroom" class="ui-widget-content ui-state-default">
-				<h4 class="ui-widget-header"> Showroom</h4>
+				<h4 class="ui-widget-header">Calenrier</h4>
 
 	    		</div>
 	    	</section>	
