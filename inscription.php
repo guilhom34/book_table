@@ -71,7 +71,7 @@ require_once ('connect.php');
                     <div class="form-group">
                         <div class="col-md-4 col-md-offset-4">
 
-                            <input type="submit" class="btn btn-default">Envoyer>
+                            <input type="submit" class="btn btn-default">
                         </div>
                     </div>
                 </fieldset>

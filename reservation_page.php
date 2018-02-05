@@ -4,88 +4,35 @@ include('inc/nav.inc.php');
 ?>
 
 	<div class= "container">
-	
-		<form method="POST" action="reservation.php" class="col-11 col-sm-10 col-lg-8">
-			<div class="form-group">
-				    <label for="nom" aria-describedby="basic-addon1">Nom</label>
-				    <input type="text" required>
+		<form class= "form_group" method="post" action="reservation.php">
+	 
+			<div class="col-xs-11 col-sm-10 col-lg-8">
+			
+				    <label for="nom" name="nom" aria-describedby="basic-addon1">Nom</label>
+				    <input type="text" class="form-control" required>
 
-				    <label for="prenom" aria-describedby="basic-addon1">Prénom</label>
-				    <input type="text" required>
+				    <label for="prenom" name="prenom" aria-describedby="basic-addon1">Prénom</label>
+				    <input type="text" class="form-control" required>
 
-				    <label for="telephone" aria-describedby="basic-addon1">Téléphone</label>
-				    <input type="numbers" class="form-control" required>
+				    <label for="telephone" name="telephone" aria-describedby="basic-addon1">Téléphone</label>
+				    <input type="text" class="form-control" required>
 
-				    <label for="email" aria-describedby="basic-addon1">Adresse e-mail</label>
+				    <label for="email" name="email" aria-describedby="basic-addon1">Adresse e-mail</label>
 				    <input type="email" class="form-control" placeholder="Votre Email" required>
-						
-			</div>
-			 
-			
-			<!-- 	<button type="submit" class="btn btn-default g-recaptcha"
-						data-sitekey="6LewlTkUAAAAAHohIMjGmJ4BKJhzXIHy6qY5rj4i"
-						data-callback="YourOnSubmitFn">Réserver
-				</button> -->
-			
-		</form>
-
-<<<<<<< HEAD
-=======
-		<!--plan de reservation du aside avec les tables-->
-<div class= "obutton feature2" data-id="<?php echo $tableID;?>"><button>Reserver table</button></div>
-
-  					<img class="card-img" src="images/plan_restaurant.png" alt="Card image" style="float: left;">
-					<img class="card-img" src="images/coupole.png" alt="card image" style="position: absolute; margin-top: 200px; margin-left: 30px;">
-
-				<div class="deux-personnes" style="position: absolute; margin-left: 790px; margin-top: 360px;">
-					<img class="pull-right tablebis" src="images/table_1.png" alt="table 1">
-					<img class="pull-right tablebis" src="images/table_2.png" alt="table 2">
-					<img class="pull-right tablebis" src="images/table_5.png" alt="table 5">
-					<img class="pull-right tablebis" src="images/table_7.png" alt="table 7">
-					<img class="pull-right tablebis" src="images/table_9.png" alt="table 9">
-  				</div>
 					
+			</div>
 
-				<div class="six-personnes" style="position: absolute; margin-left: 957px; margin-top: 430px;">
+			<div class="col-xs-11 col-sm-10 col-lg-4 calendrier">
 
-					<img class="pull-right" src="images/table_6.png" alt="table 6">
-					<img class="pull-right" src="images/table_4.png" alt="table 4">
-				</div>
->>>>>>> 52a890d7c66517e37c98bc51eae2f40e47d4e067
 
-		<form  method="POST" action="reservation.php" class="col-11 col-sm-10 col-lg-4">
+				<label class="glyphicon glyphicon-calendar" for="jour">Date
+				</label>
+				<input type="text" name="jour" id="datepicker">
 
-			<div class="form-group"  class="calendrier" style="position: absolute; margin-left: 100px; margin-top: 10px;">
-
-<<<<<<< HEAD
-				<label class="glyphicon glyphicon-calendar" for="date">Date</label>
-				<input type="text" name="date" id="datepicker">
-=======
-					<img class="pull-right" src="images/table_8.png" alt="table 8">
-					<img class="pull-right" src="images/table_10.png" alt="table 10">
-					<img class="pull-right" src="images/table_3.png" alt="table 3">
-					<img class="pull-right" src="images/table_11.png" alt="table 11">
-					<img class="pull-right" src="images/table_12.png" alt="table 12">
-
-					<div class="barre" style="position: absolute; margin-left: 320px; margin-top: -250px;">
-
-					<img class="pull-right" src="images/barre.png" alt="barre">
-				</div>
-				
-			<div class="col-11 col-sm-10 col-lg-4">
-
-			<div class="calendrier" style="position: absolute; margin-left: 100px; margin-top: 10px;">
-
-				<label class="glyphicon glyphicon-calendar" for="Date">Date</label>
-				<input type="text" name="Date" id="datepicker">
->>>>>>> 52a890d7c66517e37c98bc51eae2f40e47d4e067
-			
-				
-			
 				<label>Heure</label>
 			
 				<select  id="heure" name="heure">
-					<option value="heure"></option>
+					
 					
 					<option value="11:30:00">11:30</option>
 					<option value="12:00:00">12:00</option>
@@ -93,7 +40,7 @@ include('inc/nav.inc.php');
 					<option value="13:00:00">13:00</option>
 					<option value="13:30:00">13:30</option>
 					<option value="14:00:00">14:00</option>
-					
+	
 					<option value="19:00:00">19:00</option>
 					<option value="19:30:00">19:30</option>
 					<option value="20:00:00">20:00</option>
@@ -114,75 +61,95 @@ include('inc/nav.inc.php');
             		<option value="4">4</option>
             		<option value="5">5</option>
             		<option value="6">6</option>
-            		<option value="7">7</option>
-            		<option value="8">8</option>
-            		<option value="9">9</option>
-            		<option value="10">10</option>
-            		<option value="11">11</option>
-            		<option value="12">12</option>
+            		
             		
             	</select>
 
 			</div>
-		</div>
-<<<<<<< HEAD
 		
-
 		<!--plan de reservation du aside avec les tables-->
-			<div>
-  					<img class="card-img" src="images/plan_restaurant.png" alt="Card image" style="float: left;">
+			<div class="card-img col-xs-11 col-sm-11 col-lg-8" >
+  					<img  src="images/plan_restaurant.png" alt="Card image">
   			</div>
-  			<aside>
-  				<div>
-					<img class="card-img" src="images/coupole.png" alt="card image" style="position: absolute; margin-top: 200px; margin-left: 30px;">
+  			
+	  		<section class="col-xs-11 col-sm-10 col-lg-4">
+						<img class="card-img" src="images/coupole.png" alt="card image">
+				
+				<div class="deux-personnes ">
+					<label>
+				    	<input type="radio" name="table" id="table_1 optionsRadios2" value="table_1">
+				    	<img src="images/table_1.png" alt="table 1" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_2 optionsRadios2" value="table_2">
+				    	<img src="images/table_2.png" alt="table 2" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_5 optionsRadios2" value="table_5">
+				    	<img src="images/table_5.png" alt="table 5" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_7 optionsRadios2" value="table_7">
+				    	<img src="images/table_7.png" alt="table 7" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_9 optionsRadios2" value="table_9">
+				    	<img src="images/table_9.png" alt="table 9" aria-label="...">
+				  	</label>
 				</div>
-
-
-				<div class="deux-personnes" desciption="Table de deux personnes" style="position: absolute; margin-left: 790px; margin-top: 360px;">
-					<img class="pull-right" id="table_1" src="images/table_1.png" alt="table 1">
-					<img class="pull-right" src="images/table_2.png" alt="table 2">
-					<img class="pull-right" src="images/table_5.png" alt="table 5">
-					<img class="pull-right" src="images/table_7.png" alt="table 7">
-					<img class="pull-right" src="images/table_9.png" alt="table 9">
-  				</div>
 					
-
-				<div class="six-personnes" description="table de six personnes" style="position: absolute; margin-left: 957px; margin-top: 430px;">
-
-					<img class="pull-right" src="images/table_6.png" alt="table 6">
-					<img class="pull-right" src="images/table_4.png" alt="table 4">
+				
+				<div class="six-personnes ">
+					<label>
+				    	<input type="radio" name="table" id="table_4" value="table_4">
+				    	<img src="images/table_4.png" alt="table 4" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_6" value="table_6">
+				    	<img src="images/table_6.png" alt="table 6" aria-label="...">
+				  	</label>
+				  	
 				</div>
 
+				
+				<div class="quatre-personnes ">
+					<label>
+				    	<input type="radio" name="table" id="table_3" value="table_3">
+				    	<img src="images/table_3.png" alt="table 3" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_8" value="table_8">
+				    	<img src="images/table_8.png" alt="table 8" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_10" value="table_10">
+				    	<img src="images/table_10.png" alt="table 10" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_11" value="table_11">
+				    	<img src="images/table_11.png" alt="table 11" aria-label="...">
+				  	</label>
+				  	<label>
+				    	<input type="radio" name="table" id="table_12" value="table_12">
+				    	<img src="images/table_12.png" alt="table 12" aria-label="...">
+				  	</label>
+				  	
+				</div>
 
-
-				<div class="quatre-personnes" description="quatre_personnes" style="position: absolute; margin-left: 764px; margin-top: 610px;">
-
-					<img class="pull-right" src="images/table_8.png" alt="table 8">
-					<img class="pull-right" src="images/table_10.png" alt="table 10">
-					<img class="pull-right" src="images/table_3.png" alt="table 3">
-					<img class="pull-right" src="images/table_11.png" alt="table 11">
-					<img class="pull-right" src="images/table_12.png" alt="table 12">
-
-					<div class="barre" style="position: absolute; margin-left: 320px; margin-top: -250px;">
+					<div class="barre">
 
 						<img class="pull-right" src="images/barre.png" alt="barre">
 					</div>
-				</div>
-			</aside>
+					
+				</section>
+					<button type="submit" class="btn btn-default">
+					Valider ma réservation</button> 
+			</form>
+	</div>
+	
 
-=======
-	</div>			
-		<div class="container">
-			<section class="col-sm-10 col-lg-12 ">
-				<div id="showroom" class="ui-widget-content ui-state-default">
-				<h4 class="ui-widget-header">Calendrier</h4>
-
-	    		</div>
-	    	</section>	
->>>>>>> 52a890d7c66517e37c98bc51eae2f40e47d4e067
-        
-</div>	
-
+<?php
+include('inc/footer.inc.php');
     
         
 
