@@ -6,7 +6,7 @@ include('inc/nav.inc.php');
 	<div class= "container">
 		<form class= "form_group" method="post" action="reservation.php">
 	 
-			<div class="col-xs-11 col-sm-10 col-lg-8">
+			<div  class="col-xs-11 col-sm-10 col-lg-8">
 			
 				    <label for="nom" name="nom" aria-describedby="basic-addon1">Nom</label>
 				    <input type="text" class="form-control" required>
@@ -27,7 +27,7 @@ include('inc/nav.inc.php');
 
 				<label class="glyphicon glyphicon-calendar" for="jour">Date
 				</label>
-				<input type="text" name="jour" id="datepicker">
+				<input type="date" name="jour" id="datepicker" required>
 
 				<label>Heure</label>
 			
@@ -40,7 +40,7 @@ include('inc/nav.inc.php');
 					<option value="13:00:00">13:00</option>
 					<option value="13:30:00">13:30</option>
 					<option value="14:00:00">14:00</option>
-	
+
 					<option value="19:00:00">19:00</option>
 					<option value="19:30:00">19:30</option>
 					<option value="20:00:00">20:00</option>
@@ -75,7 +75,7 @@ include('inc/nav.inc.php');
 	  		<section class="col-xs-11 col-sm-10 col-lg-4">
 						<img class="card-img" src="images/coupole.png" alt="card image">
 				
-				<div class="deux-personnes ">
+				<div class="deux-personnes">
 					<label>
 				    	<input type="radio" name="table" id="table_1 optionsRadios2" value="table_1">
 				    	<img src="images/table_1.png" alt="table 1" aria-label="...">

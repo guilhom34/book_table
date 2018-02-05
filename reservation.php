@@ -6,14 +6,14 @@ require_once ('connect.php');
 // Déclaration des variables
 
 
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$telephone = $_POST['telephone'];
-$email = $_POST['email'];
-$jour = $_POST['jour'];
+$nom = isset($_POST['nom']) ? $_POST['nom'] : NULL;
+$prenom = isset($_POST['prenom']) ? $_POST['prenom'] : NULL;
+$telephone = isset($_POST['telephone']) ? $_POST['telephone'] : NULL;
+$email = isset($_POST['email']) ? $_POST['email'] : NULL;
+$jour = isset($_POST['jour']) ? $_POST['jour'] : NULL;
 $heure = $_POST['heure'];
 $nb_pers = $_POST['nb_pers'];
-$table = $_POST['table'];
+$table = isset($_POST['table']) ? $_POST['table'] : NULL;;
 
 var_dump($_POST);
 
@@ -48,8 +48,12 @@ $insertReservation->execute(array(
     
 
     if ($insertReservation->execute()) {
+
         $createReservation = true;
-    } else {
+
+    } 
+    else 
+    {
         $errors[] = 'Il y a une erreur dans les coordonnées saisies';
     }
     echo "votre reservation à bien été validée";
