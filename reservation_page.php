@@ -30,16 +30,17 @@ include('inc/nav.inc.php');
 		</form>
 
 		<!--plan de reservation du aside avec les tables-->
+<div class= "obutton feature2" data-id="<?php echo $tableID;?>"><button>Reserver table</button></div>
 
   					<img class="card-img" src="images/plan_restaurant.png" alt="Card image" style="float: left;">
 					<img class="card-img" src="images/coupole.png" alt="card image" style="position: absolute; margin-top: 200px; margin-left: 30px;">
 
 				<div class="deux-personnes" style="position: absolute; margin-left: 790px; margin-top: 360px;">
-					<img class="pull-right" src="images/table_1.png" alt="table 1">
-					<img class="pull-right" src="images/table_2.png" alt="table 2">
-					<img class="pull-right" src="images/table_5.png" alt="table 5">
-					<img class="pull-right" src="images/table_7.png" alt="table 7">
-					<img class="pull-right" src="images/table_9.png" alt="table 9">
+					<img class="pull-right tablebis" src="images/table_1.png" alt="table 1">
+					<img class="pull-right tablebis" src="images/table_2.png" alt="table 2">
+					<img class="pull-right tablebis" src="images/table_5.png" alt="table 5">
+					<img class="pull-right tablebis" src="images/table_7.png" alt="table 7">
+					<img class="pull-right tablebis" src="images/table_9.png" alt="table 9">
   				</div>
 					
 
@@ -62,9 +63,7 @@ include('inc/nav.inc.php');
 
 					<img class="pull-right" src="images/barre.png" alt="barre">
 				</div>
-
 				
-
 			<div class="col-11 col-sm-10 col-lg-4">
 
 			<div class="calendrier" style="position: absolute; margin-left: 100px; margin-top: 10px;">
@@ -121,7 +120,7 @@ include('inc/nav.inc.php');
 		<div class="container">
 			<section class="col-sm-10 col-lg-12 ">
 				<div id="showroom" class="ui-widget-content ui-state-default">
-				<h4 class="ui-widget-header">Calenrier</h4>
+				<h4 class="ui-widget-header">Calendrier</h4>
 
 	    		</div>
 	    	</section>	
