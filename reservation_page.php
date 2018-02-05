@@ -69,7 +69,7 @@ include('inc/nav.inc.php');
 
 			<div class="calendrier" style="position: absolute; margin-left: 100px; margin-top: 10px;">
 
-				<label class="glyphicon glyphicon-calendar" for="Date" style="position: absolute; margin-left: 800px; margin-top: 30px;">Date</label>
+				<label class="glyphicon glyphicon-calendar" for="Date">Date</label>
 				<input type="text" name="Date" id="datepicker">
 			
 				
