@@ -1,7 +1,7 @@
 <?php
 
 // connection à la base de donnée
-require_once 'connect.php';
+require_once ('connect.php');
 
 
 // on créé la variable $errors qui vaut un tableau vide
