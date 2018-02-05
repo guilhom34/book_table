@@ -9,6 +9,7 @@ require_once 'connect.php';
 $errors = [];
 $password_crypt = password_hash($_POST['mot_de_passe'], PASSWORD_DEFAULT);
 $genre = $_POST['genre'];
+$pseudo = $_POST['pseudo'];
 $nom = $_POST['nom'];
 $prenom = $_POST['prenom'];
 $telephone = $_POST['telephone'];
@@ -17,12 +18,14 @@ $email = $_POST['email'];
 
 
 
-        $insertUser = $db->prepare('INSERT INTO utilisateur(genre, nom, prenom, email, telephone, mot_de_passe) VALUES(:genre, :nom, :prenom, :email, :telephone, :mot_de_passe)');
+        $insertUser = $db->prepare('INSERT INTO utilisateur(genre, pseudo,  nom, prenom, email, telephone, mot_de_passe) VALUES(:genre, :pseudo, :nom, :prenom, :email, :telephone, :mot_de_passe)');
 
 
         $insertUser->execute(array(
 
             'genre' => $genre,
+
+            'pseudo' => $pseudo,
 
             'nom' => $nom,
 

@@ -12,13 +12,13 @@
               <h4 class="modal-title" id="gridSystemModalLabel">Connexion</h4>
           </div>
         <div class="modal-body">
-          <form method="post" action="" enctype="multipart/form-data">
+          <form method="post" action="function_connexion.php" enctype="multipart/form-data">
       			
       			<label for="pseudo">Pseudo</label>
       			<input type="text" name="pseudo" id="pseudo" /><br><br>
       			
-      			<label for="password">mot de passe</label>
-      			<input type="text" name="password" id="password" /><br><br>
+      			<label for="mot_de_passe">mot de passe</label>
+      			<input type="password" name="mot_de_passe" id="mot_de_passe" /><br><br>
       			
       			<input type="submit" class="validation" name="valider" id="valider" value="Valider" />
       		</form>

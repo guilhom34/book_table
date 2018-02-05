@@ -26,6 +26,12 @@ require_once ('connect.php');
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-md-4 control-label" for="pseudo">Pseudo</label>
+                        <div class="col-md-8">
+                            <input id="pseudo" name="pseudo" type="text" class="form-control input-md" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="col-md-4 control-label" for="prenom">Prénom</label>
                         <div class="col-md-8">
                             <input id="prenom" name="prenom" type="text" class="form-control input-md" required>
