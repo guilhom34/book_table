@@ -14,16 +14,29 @@ $jour = isset($_POST['jour']) ? $_POST['jour'] : NULL;
 $heure = isset($_POST['heure']) ? $_POST['heure'] : NULL;
 $nb_pers = isset($_POST['nb_pers']) ? $_POST['nb_pers'] : NULL;
 $table = isset($_POST['table']) ? $_POST['table'] : NULL;
+// 
 
-var_dump($_POST);
+    
 
-$tableResto = $db->prepare('SELECT * FROM tables');
 
-var_dump($tableResto);
+// $tableResto = $db->prepare('SELECT * FROM tables');
 
-$tableDispo = $db->prepare('SELECT * FROM reservation inner join tables where reserve != 1');
+// var_dump($tableResto);
 
-var_dump($tableDispo);
+// $tableDispo = $db->prepare('SELECT * FROM reservation INNER JOIN tables WHERE reserve != 1');
+
+// var_dump($tableDispo);
+
+
+$tableDispo = $db->prepare('SELECT id_table FROM tables WHERE reserve = 0');
+
+if ($tableDispo = 1){
+	echo "la table est déjà réservé";
+}
+else{
+	echo "Votre réservation est confirmé";
+	mail($_POST['email'], 'Votre reservation', $message);
+}
 
 
         
@@ -56,7 +69,7 @@ $insertReservation->execute(array(
 				
 			'nb_pers' => $nb_pers,
 
-			'id_table' => $table,
+			'numero_table' => $table,
 
 			));
 
