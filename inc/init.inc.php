@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=restaurant','root','root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO:: MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+$pdo = new PDO('mysql:host=localhost;dbname=site','root','root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO:: MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 //--------- BDD
 //$mysqli = new mysqli("localhost", "root", "root", "restaurant");
 //if ($mysqli->connect_error) die('Un problème est survenu lors de la tentative de connexion à la base de donnée : ' . $mysqli->connect_error);
@@ -9,7 +9,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=restaurant','root','root',array(PDO:
 session_start();
  
 //--------- CHEMIN
-define("RACINE_RESTAURANT","/restaurant/");
+define("RACINE_SITE","/restaurant/");
  
 //--------- VARIABLES
 $contenu = '';
