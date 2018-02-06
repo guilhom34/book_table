@@ -58,10 +58,11 @@ input, textarea {
 
  /*Declare heights because of positioning of img element*/
 .item {
-  height: 40rem;
-  width: 200rem;
+  height: 30em;
+  width: 300em;
   margin: auto;
- 
+  border-color: green 1px;
+   
 }
 
 /*.carousel-item > img {
@@ -163,16 +164,18 @@ ul.share-buttons .sr-only{
 .pull-right{
   text-align: center;
   display: block;
+  margin-top: 3%;
 }
 
 
 .calendrier{
-  border: solid blue 1px;
+  margin-top: 2%;
+
   
 }
 .plan_restaurant{
 
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .legend_restaurant{
@@ -182,25 +185,26 @@ ul.share-buttons .sr-only{
 
 .deux-personnes{
 
-/*  display: block;
-*//*  float: right;
-*/  margin-bottom: 20px;
-  margin-right: 25%;
-  /*padding-right: 8%;*/
+ display: block;
+ float: right;
+
+  margin-right: 6%;
+  padding-right: 8%;
+
 }
 .quatre-personnes{
 
 
 /*  float: right;
-*/  margin-bottom: 20px;
-  margin-right: 25%;
+*/margin-bottom: 20px;
+  margin-right: 10%;
   /*padding-right: 8%;*/
 }
 .six-personnes{
  
 /*  float: right;
 */  padding-right: 15%;
-  margin-right: 25%;
+  margin-right: 10%;
 }
 .barre{
   border: solid green 1px;
