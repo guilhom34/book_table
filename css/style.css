@@ -48,6 +48,7 @@ input, textarea {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4%;
+  padding-right: 0;
 }
  /*Since positioning the image, we need to help out the caption */
 /*.carousel-caption {
@@ -59,6 +60,7 @@ input, textarea {
 .item {
   height: 40rem;
   width: 200rem;
+  margin: auto;
  
 }
 
@@ -166,8 +168,7 @@ ul.share-buttons .sr-only{
 
 .calendrier{
   border: solid blue 1px;
-  margin-top: 100%;
-  margin-bottom: 100%;
+  
 }
 .plan_restaurant{
 
@@ -176,7 +177,7 @@ ul.share-buttons .sr-only{
 
 .legend_restaurant{
 
-  margin-top: 5%
+  margin-top: 5%;
 }
 
 .deux-personnes{
