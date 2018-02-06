@@ -10,7 +10,7 @@ require_once ('connect.php');
 
 <div class="container">
 
-        <div class="col-md-8 col-lg-10>
+        <div class="col-md-8 col-lg-10">
 
             <form   method="post" action="addUser.php" >
 
@@ -56,7 +56,7 @@ require_once ('connect.php');
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="telephone">Téléphone</label>
                             <div class="col-md-8">
-                                <input id="telephone" name="telephone" type="text" class="form-control input-md" required>
+                                <input id="telephone" name="telephone" type="int" class="form-control input-md" required>
                             </div>
                         </div>
 

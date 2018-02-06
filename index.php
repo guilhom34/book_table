@@ -24,7 +24,7 @@ include('inc/nav.inc.php');
                 </div>
 
                 <div class="item">
-                  <img src="images/bar.jpg" alt="Image de la cuisine">
+                  <img src="images/preparation_assiete.jpg" alt="Image de la cuisine">
                 </div>
 
               </div>
@@ -55,7 +55,7 @@ include('inc/nav.inc.php');
                 <div class="jumbotron container">
                   <h2>Inscription newsletter</h2>
                   <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                  <button type="submit" name="Soumettre">
+                  <input type="button" name="Soumettre">
                 </div>
             
         </div>
