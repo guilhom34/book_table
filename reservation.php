@@ -11,18 +11,31 @@ $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : NULL;
 $telephone = isset($_POST['telephone']) ? $_POST['telephone'] : NULL;
 $email = isset($_POST['email']) ? $_POST['email'] : NULL;
 $jour = isset($_POST['jour']) ? $_POST['jour'] : NULL;
-$heure = $_POST['heure'];
-$nb_pers = $_POST['nb_pers'];
-$table = isset($_POST['table']) ? $_POST['table'] : NULL;;
+$heure = isset($_POST['heure']) ? $_POST['heure'] : NULL;
+$nb_pers = isset($_POST['nb_pers']) ? $_POST['nb_pers'] : NULL;
+$table = isset($_POST['table']) ? $_POST['table'] : NULL;
 
 var_dump($_POST);
 
 $tableResto = $db->prepare('SELECT * FROM tables');
 
-var_dump($_tableResto);
+var_dump($tableResto);
+
+$tableDispo = $db->prepare('SELECT * FROM reservation inner join tables where reserve != 1');
+
+var_dump($tableDispo);
+
+
         
 // choisir sa date et heure de reservation
 
+// $reservation = $db->prepare('
+// 	SELECT *
+//  	FROM reservation 
+// 	INNER JOIN tables 
+// 	ON reservation = 0');
+
+// var_dump($reservation);
 
 $insertReservation = $db->prepare('INSERT INTO reservation(nom, prenom, email, telephone, heure, jour, nb_pers, tables) VALUES(:nom, :prenom, :email, :telephone, :heure, :jour, :nb_pers,:table)'); 
 
@@ -43,7 +56,7 @@ $insertReservation->execute(array(
 				
 			'nb_pers' => $nb_pers,
 
-			'table' => $table,
+			'id_table' => $table,
 
 			));
 
