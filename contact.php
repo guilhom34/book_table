@@ -54,7 +54,7 @@ include('inc/nav.inc.php');
 			</form>
 		</fieldset>
 		<hr />
-		<fieldset>
+		<!--fieldset>
 			<h3 style="background-color: #333; color: white; font-family: calibri; padding: 10px; text-align: center;">Personnes inscrites</h3>
 			
 			<?php
@@ -65,29 +65,26 @@ include('inc/nav.inc.php');
 			// file_exists() nous permet de vérifier si le fichier existe avant de la traiter.
 			// renvoi true ou false
 			
-			if(file_exists("liste.txt"))
+			//if(file_exists("liste.txt"))
 			{
-				$liste = file('liste.txt');
-				echo '<pre>'; print_r($liste); echo '</pre>';
+				//$liste = file('liste.txt');
+				//echo '<pre>'; print_r($liste); echo '</pre>';
 				
-				echo '<ul>';
+				//echo '<ul>';
 				
-				foreach($liste AS $val)
+				//foreach($liste AS $val)
 				{
-					echo '<li>' . $val . '</li>';
+				//	echo '<li>' . $val . '</li>';
 				}
 				
-				echo '</ul>';
+				//echo '</ul>';
 				
 			}
 			
-			?>
+			?>//
 
 			
-		</fieldset>
-		
-	</body>
-</html>
+		</fieldset> -->
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
@@ -124,7 +121,6 @@ include('inc/nav.inc.php');
 			}
 		</script>
 	<!-- Début section body du script HTML -->
-<body onload="initialiserCarte()">
 
 		<!-- Titre du traitement -->
 		<h1>Geolocalisation de notre site sur google map</h1>
@@ -134,7 +130,7 @@ include('inc/nav.inc.php');
 		<script type="text/javascript">
 		</script>
 
-		<button onclick="getLocation()">Try It</button>
+		<button onclick="getLocation()">Testez google map</button>
 
 <div id="mapholder"></div>
 
@@ -151,8 +147,8 @@ function getLocation() {
 
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&key=AIzaSyA5XWfnw9yMOd4AIKqczFjqACbyuIWptfs";
+    var img_url ="https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 //To use this code on your website, get a free API key from Google.
