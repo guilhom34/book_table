@@ -134,12 +134,13 @@ include('inc/nav.inc.php');
 		<script type="text/javascript">
 		</script>
 
-		<button onclick="getLocation()">Testez le!</button>
+		<button onclick="getLocation()">Try It</button>
 
 <div id="mapholder"></div>
 
 <script>
 var x = document.getElementById("demo");
+
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -147,13 +148,16 @@ function getLocation() {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
+
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCJxgKHBjNrsKSeKbTJ8W5fSo_AQO_P9s4&region=FR">
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyChCtbkm-cBxCn_dTxYP3P7tc2RYlNwPiY&callback=initMap";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-}
+}"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
 //To use this code on your website, get a free API key from Google.
 //Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
@@ -172,26 +176,5 @@ function showError(error) {
 }
 </script>
 
-		<!-- Définition de la division dans laquelle la carte sera affichée -->
-		<div id="maCarte" style="width:100%; height:100%"></div>
-
-		<!-- Message à destinatation des internautes ayant un navigateur sans Javascript -->
-		<noscript>
-			<p>
-				Remarque importante :
-			</p>
-			<p>
-				Pour utiliser une carte de type Google Map il faut que JavaScript soit activé dans votre navigateur.
-			</p>
-		</noscript>
-
-		<!-- Affichage du code source -->
-		<br />
-		<br />
-		<br />
-
-			</div>
-		</section>
-		
-<?php
-include('inc/footer.inc.php');
+</body>
+</html>
