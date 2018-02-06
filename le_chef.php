@@ -28,12 +28,12 @@ include('inc/nav.inc.php');
 				  </div>
 				  <div class="col-xs-6 col-md-3 col-lg-4">
 					    <a href="#" class="thumbnail">
-					      <img src="images/plat4.jpg" alt="Boeuf" class="img-rounded">
+					      <img src="images/plat_boeuf.jpg" alt="plat_boeuf" class="img-rounded">
 					    </a>
 				  </div>
 				  <div class="col-xs-6 col-md-3 col-lg-4">
 					    <a href="#" class="thumbnail">
-					      <img src="images/dessert8.jpg" alt="dessert">
+					      <img src="images/glace_coulis.jpg" alt="dessert">
 					    </a>
 				  </div>
 				  

@@ -93,10 +93,14 @@ input, textarea {
   margin-bottom: 0.5%;
   /*background-color: #CCC5AF;*/
 }
-body{
- /* background-color: #403E3D;*/
-  font-color: white;
-}
+
+
+/*img.item{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}*/
 
 
 /* Featurettes
@@ -162,6 +166,8 @@ ul.share-buttons .sr-only{
 
 .calendrier{
   border: solid blue 1px;
+  margin-top: 100%;
+  margin-bottom: 100%;
 }
 .plan_restaurant{
 
