@@ -152,9 +152,9 @@ function getLocation() {
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&key=AIzaSyChCtbkm-cBxCn_dTxYP3P7tc2RYlNwPiY&callback=initMap";
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyA5XWfnw9yMOd4AIKqczFjqACbyuIWptfs";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
-}"https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
+}
 //To use this code on your website, get a free API key from Google.
 //Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
