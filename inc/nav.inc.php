@@ -33,7 +33,15 @@
 						  </ul>
 
 						  <button type="button" class="btn  glyphicon glyphicon-user" data-toggle="modal" data-target="#connexion">
-						  	
+							<?php
+						  	 
+							  //   if (isset($_SESSION['pseudo']))
+							  //   {
+									// $pseudo = $_SESSION['pseudo'];
+
+							  //   	echo 'Bienvenue' . ' ' . $pseudo . ' ';
+							   // } 
+						  	?> 
 							
 							</button>
 						</div>

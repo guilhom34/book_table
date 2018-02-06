@@ -39,6 +39,8 @@ if(isset($_POST['pseudo']) && isset($_POST['mot_de_passe']))
 
 		    $_SESSION['pseudo'] = $pseudo;
 
+		    header('location: index.php');
+
 		    echo 'Bienvenue' . ' ' . $pseudo . ' ';
 
 		}
