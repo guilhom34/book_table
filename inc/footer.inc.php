@@ -1,6 +1,6 @@
 		<footer>
 
-			<div class="col-xs-10 col-lg-8">
+			<div class="col-xs-10 col-lg-12">
 				<div class="share-buttons" style="display: block; text-align: center;">
 		  			
 		  				<a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="images/flat_web_icon_set/black/Facebook.png" /></a>

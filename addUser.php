@@ -46,10 +46,15 @@ $email = $_POST['email'];
 
         if ($insertUser->execute()) {
             $createUser = true;
-        } else {
+
+           header('location: index.php');
+           
+            echo "votre inscription à bien été validée";
+        } 
+        else {
             $errors[] = 'Il y a une erreur dans les coordonnées saisies';
         }
-        echo "votre inscription à bien été validée";
+        
     
 
 

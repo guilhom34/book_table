@@ -17,11 +17,14 @@ $table = isset($_POST['table']) ? $_POST['table'] : NULL;;
 
 var_dump($_POST);
 
+$tableResto = $db->prepare('SELECT * FROM tables');
+
+var_dump($_tableResto);
         
 // choisir sa date et heure de reservation
 
 
-$insertReservation = $db->prepare('INSERT INTO reservation(nom, prenom, email, telephone, heure, jour, nb_pers) VALUES(:nom, :prenom, :email, :telephone, :heure, :jour, :nb_pers)'); 
+$insertReservation = $db->prepare('INSERT INTO reservation(nom, prenom, email, telephone, heure, jour, nb_pers, tables) VALUES(:nom, :prenom, :email, :telephone, :heure, :jour, :nb_pers,:table)'); 
 
 $insertReservation->execute(array(
 

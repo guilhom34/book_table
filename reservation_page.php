@@ -3,8 +3,7 @@ include('inc/header.inc.php');
 include('inc/nav.inc.php');
 ?>
 
-	<div class= "container">
-		<form class= "form_group" method="post" action="reservation.php">
+	<form class= "container" class= "form_group" method="post" action="reservation.php">
 	 
 			<div  class="col-xs-11 col-sm-10 col-lg-8">
 			
@@ -22,12 +21,12 @@ include('inc/nav.inc.php');
 					
 			</div>
 
-			<div class="col-xs-11 col-sm-10 col-lg-4 calendrier">
+			<div class="col-xs-11 col-sm-10 col-lg-4 jumbotron calendrier form_group">
 
 
 				<label class="glyphicon glyphicon-calendar" for="jour">Date
 				</label>
-				<input type="date" name="jour" id="datepicker" required>
+				<input type="date" name="jour" id="datepicker inputWarning1" required>
 
 				<label>Heure</label>
 			
@@ -68,14 +67,14 @@ include('inc/nav.inc.php');
 			</div>
 		
 		<!--plan de reservation du aside avec les tables-->
-			<div class="card-img col-xs-11 col-sm-11 col-lg-8" >
+			<div class="plan_restaurant col-xs-11 col-sm-11 col-lg-8" >
   					<img  src="images/plan_restaurant.png" alt="Card image">
   			</div>
   			
-	  		<section class="col-xs-11 col-sm-10 col-lg-4">
-						<img class="card-img" src="images/coupole.png" alt="card image">
+	  		<section class="pull-right col-xs-11 col-sm-10 col-lg-4">
+						<img class="legend_restaurant" src="images/coupole.png" alt="card image">
 				
-				<div class="deux-personnes">
+				<div class="deux-personnes center-block">
 					<label>
 				    	<input type="radio" name="table" id="table_1 optionsRadios2" value="table_1">
 				    	<img src="images/table_1.png" alt="table 1" aria-label="...">
@@ -133,20 +132,20 @@ include('inc/nav.inc.php');
 				    	<input type="radio" name="table" id="table_12" value="table_12">
 				    	<img src="images/table_12.png" alt="table 12" aria-label="...">
 				  	</label>
-				  	
+
+				  
+				
 				</div>
-
-					<div class="barre">
-
-						<img class="pull-right" src="images/barre.png" alt="barre">
-					</div>
+<!-- 
+					<img class="barre" src="images/barre.png" alt="barre"> -->
+						
 					
 				</section>
 					<button type="submit" class="btn btn-default">
 					Valider ma réservation</button> 
 			</form>
-	</div>
-	
+<!-- 	</div>
+ -->	
 
 <?php
 include('inc/footer.inc.php');
