@@ -11,7 +11,7 @@
 	
 		  				<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="images/flat_web_icon_set/black/LinkedIn.png" /></a>
 
-		  		<div>
+		  		<div class="copy">
 		  			Copyright &copy; NH & GF 2017
 		  		</div>
 
