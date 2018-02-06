@@ -25,8 +25,9 @@
 		
 	<body>
 		<header>
-<div>
-  					<img class="img-card" src="images/logo_la_table_gourmande.png" alt="Card image">
+
+				<div class="img-card container">
+  					<img class="" src="images/logo_la_table_gourmande.png" alt="Card image">
   				</div>
 	
 		</header>
