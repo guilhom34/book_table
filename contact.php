@@ -42,15 +42,31 @@ include('inc/nav.inc.php');
 	<body>
 	<?php echo $message; ?>
 		<fieldset>
-			<form method="post" action="" enctype="multipart/form-data">
+			<form class= "container" class= "form_group" method="post" action="reservation.php">
+	 
+			<div  class="col-xs-11 col-sm-10 col-lg-8">
 			
-				<label for="pseudo">Pseudo</label>
-				<input type="text" name="pseudo" id="pseudo" /><br><br>
+				    <label for="nom" name="nom" aria-describedby="basic-addon1">Nom</label>
+				    <input type="text" class="form-control" required>
+
+				    <label for="prenom" name="prenom" aria-describedby="basic-addon1">Prénom</label>
+				    <input type="text" class="form-control" required>
+
+				    <label for="telephone" name="telephone" aria-describedby="basic-addon1">Téléphone</label>
+				    <input type="text" class="form-control" required>
+
+				    <label for="email" name="email" aria-describedby="basic-addon1">Adresse e-mail</label>
+				    <input type="email" class="form-control" placeholder="Votre Email" required>
+
+				    <label for="message" name="message" aria-describedby="basic-addon1">Votre message</label>
+				    <textarea type="message" class="form-control" placeholder="Votre Message" required></textarea>
+					
 				
-				<label for="email">Email</label>
-				<input type="text" name="email" id="email" /><br><br>
-				
+				<!--<label for="email">Email</label>
+				<input type="text" name="email" id="email" /><br><br> -->
+				<div class="valid">
 				<input type="submit" class="validation" name="valider" id="valider" value="Valider" />
+			</div>
 			</form>
 		</fieldset>
 		<hr />
@@ -171,6 +187,10 @@ function showError(error) {
     }
 }
 </script>
+
+<div class map>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.538281310946!2d3.871064209144207!3d43.67857158488434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a8e31f0a5d23%3A0x911f7d8f6c729654!2sSaint+Joseph+Pierre+Rouge!5e0!3m2!1sfr!2sfr!4v1517684634256" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 
 </body>
 </html>
