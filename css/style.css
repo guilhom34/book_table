@@ -49,6 +49,7 @@ input, textarea {
 .carousel {
   margin-bottom: 4%;
   padding-right: 0;
+  text-align: center;
 }
  /*Since positioning the image, we need to help out the caption */
 /*.carousel-caption {
@@ -64,6 +65,7 @@ input, textarea {
   border-color: green 1px;
    
 }
+
 
 /*.carousel-item > img {
   position: relative;
